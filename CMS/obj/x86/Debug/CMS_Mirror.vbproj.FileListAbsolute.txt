@@ -1,0 +1,10 @@
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\bin\Debug\CMS_Mirror.exe
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\bin\Debug\CMS_Mirror.pdb
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\bin\Debug\CMS_Mirror.xml
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\obj\x86\Debug\CMS_Mirror.Resources.resources
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\obj\x86\Debug\CMS_Mirror.exe
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\obj\x86\Debug\CMS_Mirror.xml
+C:\Users\Brij.JADEJA\AppData\Local\Temporary Projects\CMS_Mirror\obj\x86\Debug\CMS_Mirror.pdb

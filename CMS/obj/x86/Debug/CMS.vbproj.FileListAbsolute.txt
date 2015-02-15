@@ -1,0 +1,238 @@
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\bin\Debug\CMS.exe
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\bin\Debug\CMS.pdb
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\bin\Debug\CMS.xml
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.Input_Form.resources
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.Resources.resources
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.exe
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.xml
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.pdb
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.adCntct.resources
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.Contact_List.resources
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.Student_srch.resources
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\bin\Debug\CMS.exe.config
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.RprtVw.resources
+E:\Top\VB_2010\Sanskrit_Bharti\CMS_Mirror\CMS\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+D:\CMS\CMS\bin\Debug\CMS.exe.config
+D:\CMS\CMS\obj\x86\Debug\CMS.exe
+D:\CMS\CMS\obj\x86\Debug\CMS.xml
+D:\CMS\CMS\obj\x86\Debug\CMS.pdb
+H:\CMS\CMS\bin\Debug\CMS.exe.config
+H:\CMS\CMS\obj\x86\Debug\CMS.exe
+H:\CMS\CMS\obj\x86\Debug\CMS.xml
+H:\CMS\CMS\obj\x86\Debug\CMS.pdb
+H:\CMS\CMS\bin\Debug\CMS.exe
+H:\CMS\CMS\bin\Debug\CMS.pdb
+H:\CMS\CMS\bin\Debug\CMS.xml
+H:\CMS\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+H:\CMS\CMS\obj\x86\Debug\CMS.adCntct.resources
+H:\CMS\CMS\obj\x86\Debug\CMS.Contact_List.resources
+H:\CMS\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+H:\CMS\CMS\obj\x86\Debug\CMS.Input_Form.resources
+H:\CMS\CMS\obj\x86\Debug\CMS.Resources.resources
+H:\CMS\CMS\obj\x86\Debug\CMS.RprtVw.resources
+H:\CMS\CMS\obj\x86\Debug\CMS.Student_srch.resources
+H:\CMS\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+H:\CMS\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+H:\New folder\CMS\CMS\bin\Debug\CMS.exe.config
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.xml
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.pdb
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.adCntct.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.Contact_List.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.Input_Form.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.Resources.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.RprtVw.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.Student_srch.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+H:\New folder\CMS\CMS\bin\Debug\CMS.exe
+H:\New folder\CMS\CMS\bin\Debug\CMS.pdb
+H:\New folder\CMS\CMS\bin\Debug\CMS.xml
+H:\New folder\CMS\CMS\obj\x86\Debug\CMS.exe
+F:\New folder\CMS\CMS\bin\Debug\CMS.exe.config
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.exe
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.xml
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.pdb
+F:\New folder\CMS\CMS\bin\Debug\CMS.exe
+F:\New folder\CMS\CMS\bin\Debug\CMS.pdb
+F:\New folder\CMS\CMS\bin\Debug\CMS.xml
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.adCntct.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Contact_List.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Fee_Details.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Input_Form.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Resources.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Student_srch.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.EditCity.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.UpkmngExm.resources
+F:\New folder\CMS\CMS\bin\Debug\CMS.exe.manifest
+F:\New folder\CMS\CMS\bin\Debug\CMS.application
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.exe.manifest
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.application
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Res_prg.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.FormReport.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\CMS.Report_Viewer.resources
+F:\New folder\CMS\CMS\obj\x86\Debug\RdlCompile.cache
+F:\New folder\CMS\CMS\obj\x86\Debug\RdlCompile.compiled
+H:\SanskrutBHarti\CMS\CMS\CMS\bin\Debug\CMS.exe.config
+H:\SanskrutBHarti\CMS\CMS\CMS\obj\x86\Debug\CMS.exe
+H:\SanskrutBHarti\CMS\CMS\CMS\obj\x86\Debug\CMS.xml
+H:\SanskrutBHarti\CMS\CMS\CMS\obj\x86\Debug\CMS.pdb
+C:\Users\Breeze\Downloads\CMS.zip\CMS\bin\Debug\CMS.exe.config
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.exe
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.xml
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.pdb
+C:\Users\Breeze\Downloads\CMS.zip\CMS\bin\Debug\CMS.exe.manifest
+C:\Users\Breeze\Downloads\CMS.zip\CMS\bin\Debug\CMS.application
+C:\Users\Breeze\Downloads\CMS.zip\CMS\bin\Debug\CMS.exe
+C:\Users\Breeze\Downloads\CMS.zip\CMS\bin\Debug\CMS.pdb
+C:\Users\Breeze\Downloads\CMS.zip\CMS\bin\Debug\CMS.xml
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.adCntct.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Contact_List.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.EditCity.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Fee_Details.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.FormReport.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Input_Form.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Resources.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Report_Viewer.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Res_prg.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.Student_srch.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.UpkmngExm.resources
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\RdlCompile.cache
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\RdlCompile.compiled
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.exe.manifest
+C:\Users\Breeze\Downloads\CMS.zip\CMS\obj\x86\Debug\CMS.application
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\bin\Debug\CMS.exe.config
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.exe
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.xml
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.pdb
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\bin\Debug\CMS.exe.manifest
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\bin\Debug\CMS.application
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\bin\Debug\CMS.exe
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\bin\Debug\CMS.pdb
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\bin\Debug\CMS.xml
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.adCntct.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Contact_List.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.EditCity.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Fee_Details.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.FormReport.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Input_Form.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Resources.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Report_Viewer.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Res_prg.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.Student_srch.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.UpkmngExm.resources
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\RdlCompile.cache
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\RdlCompile.compiled
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.exe.manifest
+C:\Users\Breeze\Downloads\CMS-24062014\CMS\obj\x86\Debug\CMS.application
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\bin\Debug\CMS.exe.config
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\bin\Debug\CMS.exe.manifest
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\bin\Debug\CMS.application
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\bin\Debug\CMS.exe
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\bin\Debug\CMS.pdb
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\bin\Debug\CMS.xml
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.adCntct.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Contact_List.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.EditCity.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Fee_Details.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.FollowUpReport.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Startt_Up.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.FormReport.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Input_Form.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Resources.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Reg_status.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Report_Viewer.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Res_prg.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Start_Up.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Student_List_paged.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.Student_srch.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.UpkmngExm.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.WaitScreen.resources
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.exe.manifest
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.application
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.exe
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.xml
+C:\Users\Breeze\Downloads\CMS-12072014\CMS\obj\x86\Debug\CMS.pdb
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\bin\Debug\CMS.exe.config
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.exe
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.xml
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.pdb
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\bin\Debug\CMS.exe.manifest
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\bin\Debug\CMS.application
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\bin\Debug\CMS.exe
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\bin\Debug\CMS.pdb
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\bin\Debug\CMS.xml
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.adCntct.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Contact_List.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.EditCity.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Fee_Details.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.FollowUpReport.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Startt_Up.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.FormReport.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Input_Form.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Resources.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Reg_status.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Report_Viewer.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Res_prg.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Start_Up.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Student_List_paged.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.Student_srch.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.UpkmngExm.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.WaitScreen.resources
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.exe.manifest
+C:\Users\Deep\Documents\aHBB20\sanskrutbharti\SRCCOMPRESS\SRCCOMPRESS\CMS-01022015_SRC\CMS\obj\x86\Debug\CMS.application
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\bin\Debug\CMS.exe.config
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.exe
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.xml
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.pdb
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\bin\Debug\CMS.exe.manifest
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\bin\Debug\CMS.application
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\bin\Debug\CMS.exe
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\bin\Debug\CMS.pdb
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\bin\Debug\CMS.xml
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.vbprojResolveAssemblyReference.cache
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.adCntct.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Contact_List.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.EditCity.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Exm_frm.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Fee_Details.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.FollowUpReport.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Startt_Up.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.FormReport.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Input_Form.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Resources.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Reg_status.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Report_Viewer.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Res_prg.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Start_Up.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Student_List_paged.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.Student_srch.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.try_by_hbb.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.UpkmngExm.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.WaitScreen.resources
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.vbproj.GenerateResource.Cache
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.exe.manifest
+F:\CMS_FINALIZa\CMS-01022015_SRC_MARKSHEET\CMS-01022015_SRC_MARKSHEET\CMS\obj\x86\Debug\CMS.application
