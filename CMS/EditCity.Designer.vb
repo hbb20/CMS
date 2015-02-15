@@ -30,6 +30,8 @@ Partial Class EditCity
         Me.StateListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CountryListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActvyItms = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditEducationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuolificationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -37,9 +39,8 @@ Partial Class EditCity
         Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CHangeFontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.EditEducationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QuolificationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FontDialog1 = New System.Windows.Forms.FontDialog()
+        Me.MediumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,7 +55,7 @@ Partial Class EditCity
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CityListToolStripMenuItem, Me.DistrictListToolStripMenuItem, Me.StateListToolStripMenuItem, Me.CountryListToolStripMenuItem, Me.ActvyItms, Me.EditEducationToolStripMenuItem, Me.QuolificationToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CityListToolStripMenuItem, Me.DistrictListToolStripMenuItem, Me.StateListToolStripMenuItem, Me.CountryListToolStripMenuItem, Me.ActvyItms, Me.EditEducationToolStripMenuItem, Me.QuolificationToolStripMenuItem, Me.MediumToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -88,6 +89,18 @@ Partial Class EditCity
         Me.ActvyItms.Name = "ActvyItms"
         Me.ActvyItms.Size = New System.Drawing.Size(152, 22)
         Me.ActvyItms.Text = "Activity"
+        '
+        'EditEducationToolStripMenuItem
+        '
+        Me.EditEducationToolStripMenuItem.Name = "EditEducationToolStripMenuItem"
+        Me.EditEducationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EditEducationToolStripMenuItem.Text = "&Education List"
+        '
+        'QuolificationToolStripMenuItem
+        '
+        Me.QuolificationToolStripMenuItem.Name = "QuolificationToolStripMenuItem"
+        Me.QuolificationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuolificationToolStripMenuItem.Text = "&Quolification"
         '
         'ExitToolStripMenuItem
         '
@@ -125,7 +138,7 @@ Partial Class EditCity
         'CHangeFontToolStripMenuItem
         '
         Me.CHangeFontToolStripMenuItem.Name = "CHangeFontToolStripMenuItem"
-        Me.CHangeFontToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CHangeFontToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.CHangeFontToolStripMenuItem.Text = "&Change Font"
         '
         'RichTextBox1
@@ -138,21 +151,15 @@ Partial Class EditCity
         Me.RichTextBox1.TabIndex = 2
         Me.RichTextBox1.Text = ""
         '
-        'EditEducationToolStripMenuItem
-        '
-        Me.EditEducationToolStripMenuItem.Name = "EditEducationToolStripMenuItem"
-        Me.EditEducationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EditEducationToolStripMenuItem.Text = "&Education List"
-        '
-        'QuolificationToolStripMenuItem
-        '
-        Me.QuolificationToolStripMenuItem.Name = "QuolificationToolStripMenuItem"
-        Me.QuolificationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.QuolificationToolStripMenuItem.Text = "&Quolification"
-        '
         'FontDialog1
         '
         Me.FontDialog1.Color = System.Drawing.SystemColors.ControlText
+        '
+        'MediumToolStripMenuItem
+        '
+        Me.MediumToolStripMenuItem.Name = "MediumToolStripMenuItem"
+        Me.MediumToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MediumToolStripMenuItem.Text = "&Medium"
         '
         'EditCity
         '
@@ -190,4 +197,5 @@ Partial Class EditCity
     Friend WithEvents EditEducationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents QuolificationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FontDialog1 As System.Windows.Forms.FontDialog
+    Friend WithEvents MediumToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

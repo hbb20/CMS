@@ -7,6 +7,7 @@ Public Class Student_srch
     Public connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\db_users.accdb;Jet OLEDB:Database Password=;"
     Dim unVrsltbl As New DataTable
     Dim fulDatatbl As New DataTable
+    Dim maiNHandler As New DataTable
 
     Public finlfont As Font = FontRetrive()
     Public thrdWait As Thread
@@ -22,9 +23,7 @@ Public Class Student_srch
     Public EndNum As String = 0
     Public totalCount As String
 
-
     Dim publicThrd As Thread
-
 
     Dim isSearchEnable As Boolean = False
     Private PageCount As Integer
@@ -34,6 +33,20 @@ Public Class Student_srch
     Private recNo As Integer
     Private dtSource As DataTable
     Public FirstTime As Boolean = True
+    Public displayPageSize As String = 100
+
+
+#Region "Show Columns"
+    Public alowAddr As Boolean = True
+    Public alowBrthdate As Boolean = True
+    Public alowQuol As Boolean = True
+    Public alowContctNo As Boolean = True
+    Public alowContctId As Boolean = True
+    Public alowRgnDate As Boolean = True
+    Public alowEduc As Boolean = True
+#End Region
+
+
 
     Public Shared Sub OnThreadException(ByVal sender As Object, ByVal e As ThreadExceptionEventArgs)
 
@@ -72,7 +85,6 @@ Public Class Student_srch
         LoadCmbCity()
         LoadCmbDistr()
         onLoadTotal()
-
         btnDisabled()
 
 
@@ -89,7 +101,8 @@ Public Class Student_srch
             Input_Form.thrdBuffr.Abort()
         Catch ex As Exception
         End Try
-       
+        cmbCount.SelectedIndex = 0
+        FirstTime = False
     End Sub
     Sub newSubFont()
 
@@ -99,17 +112,6 @@ Public Class Student_srch
                     .Rows(l).DefaultCellStyle.Font = finlfont
                 Next
             End With
-            'For l As Integer = 0 To DataGridView1.ColumnCount - 1
-            '    If l = 6 Or l = 7 Or l = 8 Then
-            '        DataGridView1.Columns(l).DefaultCellStyle.Font = New Font("Arial", 12.0F, FontStyle.Regular, GraphicsUnit.Pixel)
-            '    Else
-            '        DataGridView1.Columns(l).DefaultCellStyle.Font = lblFont.Font
-            '    End If
-            '    If Not l = 12 Then
-            '        DataGridView1.Columns(l).ReadOnly = True
-            '    End If
-            '    DataGridView1.Columns(l).HeaderCell.Style.Font = New Font("Arial", 12.0F, FontStyle.Regular, GraphicsUnit.Pixel)
-            'Next
             DataGridView1.Columns(12).DisplayIndex = 0
         Catch ex As Exception
             'Me.BeginInvoke(New Action(Of Exception)(AddressOf ThreadException), ex)
@@ -117,31 +119,59 @@ Public Class Student_srch
         DataGridView1.PerformLayout()
         DataGridView1.Refresh()
         btnEnabled()
-       'MsgBox(DataGridView1.Font.FontFamily.ToString)
     End Sub
-    Public Sub LoadFromtable()
-        Try
-            Clear()
-        If isSearchEnable = True Then
-            Dim dtempTbl As New DataTable
-            dtempTbl = datatableCopy(fulDatatbl, 0)
-            DataGridView1.DataSource = dtempTbl 'dTst1.Tables(0)
-            Me.Text = "Student Search"
-            newSubFont()
-            btnEnabled()
-        Else
-            Dim dtempTbl As New DataTable
-            dtempTbl = datatableCopy(unVrsltbl, 0)
-            DataGridView1.DataSource = dtempTbl 'dTst1.Tables(0)
-            Me.Text = "Student Search"
-            newSubFont()
-            btnEnabled()
-            End If
-        Catch ex As Exception
-            'Me.BeginInvoke(New Action(Of Exception)(AddressOf ThreadException), ex)
-        End Try
+    Sub Disabler()
+        If alowAddr = False Then
+            txtAdress.Enabled = False
+        End If
+        If alowBrthdate = False Then
+            unVrsltbl.Columns.RemoveAt(6)
+        End If
+        If alowContctId = False Then
+            unVrsltbl.Columns.RemoveAt(11)
+        End If
+        If alowContctNo = False Then
+            unVrsltbl.Columns.RemoveAt(7)
+        End If
+        If alowEduc = False Then
+            unVrsltbl.Columns.RemoveAt(9)
+        End If
+        If alowQuol = False Then
+            unVrsltbl.Columns.RemoveAt(10)
+        End If
+        If alowRgnDate = False Then
+            unVrsltbl.Columns.RemoveAt(8)
+        End If
     End Sub
+    Public Sub ColumnsHandler()
 
+        unVrsltbl = maiNHandler
+
+        If alowAddr = False Then
+            unVrsltbl.Columns.Remove("Address")
+        End If
+        If alowBrthdate = False Then
+            unVrsltbl.Columns.Remove("B Date")
+        End If
+        If alowContctId = False Then
+            unVrsltbl.Columns.Remove("Contact Id")
+        End If
+        If alowContctNo = False Then
+            unVrsltbl.Columns.Remove("Contact No")
+        End If
+        If alowEduc = False Then
+            unVrsltbl.Columns.Remove("Education")
+        End If
+        If alowQuol = False Then
+            unVrsltbl.Columns.Remove("Qualification")
+        End If
+        If alowRgnDate = False Then
+            unVrsltbl.Columns.Remove("Regn Date")
+        End If
+        unVrsltbl.AcceptChanges()
+
+        FillGrid()
+    End Sub
     Sub newLoadFunc()
 
         Me.Text = "Student Search (Loading)"
@@ -156,13 +186,13 @@ Public Class Student_srch
 
             dAdptR.Fill(dTst1)
             unVrsltbl = dTst1.Tables(0)
+            maiNHandler = dTst1.Tables(0)
+
             lblNUms.Text = "0 To 200"
             Dim dtempTbl As New DataTable
 
             dtempTbl = datatableCopy(unVrsltbl, 0)
-
             dtSource = unVrsltbl
-
             FillGrid()
             'DataGridView1.DataSource = dtempTbl
             Me.Text = "Student Search"
@@ -208,60 +238,8 @@ Public Class Student_srch
             End Try
         End Try
     End Sub
-    Sub OnNxt()
-        Try
-            If isSearchEnable = False Then
-                Clear()
-                DataGridView1.DataSource = datatableCopy(unVrsltbl, EndNum)
-                lblNUms.Text = EndNum.ToString + " To " + (EndNum + 200).ToString
-                newSubFont()
-                btnEnabled()
-                publicThrd.Abort()
-            Else
-                Clear()
-                DataGridView1.DataSource = datatableCopy(fulDatatbl, EndNum)
-                lblNUms.Text = EndNum.ToString + " To " + (EndNum + 200).ToString
-                newSubFont()
-                btnEnabled()
-                publicThrd.Abort()
-            End If
-        Catch ex As Exception
-            Me.BeginInvoke(New Action(Of Exception)(AddressOf ThreadException), ex)
-        End Try
-    End Sub
-    Sub OnPrev()
-        Try
-            If isSearchEnable = False Then
-                Clear()
-                DataGridView1.DataSource = datatableCopy(unVrsltbl, EndNum)
-                newSubFont()
-                btnEnabled()
-                lblNUms.Text = EndNum.ToString + " To " + (EndNum + 200).ToString
-                publicThrd.Abort()
-            Else
-                Clear()
-                DataGridView1.DataSource = datatableCopy(fulDatatbl, EndNum)
-                newSubFont()
-                btnEnabled()
-                lblNUms.Text = EndNum.ToString + " To " + (EndNum + 200).ToString
-                publicThrd.Abort()
-            End If
-        Catch ex As Exception
-            Me.BeginInvoke(New Action(Of Exception)(AddressOf ThreadException), ex)
-        End Try
-    End Sub
 #Region "Next Prev"
-    Sub LoadFirst()
-       
-    End Sub
-    Sub LoadLast()
-       
-    End Sub
-
     Private Sub btnNxt_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNxt.Click
-
-
-
 
         'If the user did not click the "Fill Grid" button then Return
         If Not CheckFillButton() Then Return
@@ -285,55 +263,10 @@ Public Class Student_srch
         End If
 
         LoadPage()
-
-
-
-
-
-
-        '' ''btnDisabled()
-        '' ''Try
-        '' ''    If publicThrd.IsBackground Or publicThrd.IsAlive Then
-        '' ''        MsgBox("Wait for current process to finish")
-        '' ''    End If
-        '' ''Catch ex As Exception
-        '' ''End Try
-
-        '' ''EndNum += 200
-        '' ''If isSearchEnable = False Then
-        '' ''    If (EndNum >= totalCount + 200) Then
-        '' ''        MsgBox("You Are at the last page", MsgBoxStyle.Exclamation, "Excuse me")
-        '' ''        btnEnabled()
-        '' ''        Exit Sub
-        '' ''    End If
-        '' ''Else
-        '' ''    If totalCount > 200 Then
-        '' ''        If (EndNum >= totalCount + 200) Then
-        '' ''            MsgBox("You Are at the last page", MsgBoxStyle.Exclamation, "Excuse me")
-        '' ''            btnEnabled()
-        '' ''            Exit Sub
-        '' ''        End If
-        '' ''    Else
-        '' ''        MsgBox("You Are at the last page", MsgBoxStyle.Exclamation, "Excuse me")
-        '' ''        btnEnabled()
-        '' ''        EndNum = 0
-        '' ''        Exit Sub
-        '' ''    End If
-        '' ''End If
-
-        '' ''publicThrd = New Thread(AddressOf OnNxt)
-        '' ''publicThrd.IsBackground = True
-        '' ''publicThrd.Start()
     End Sub
     Private Sub btnPrev_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrev.Click
 
-
-
         If Not CheckFillButton() Then Return
-
-        'If currentPage = PageCount Then
-        '    recNo = pageSize * (currentPage - 2)
-        'End If
 
         currentPage = currentPage - 1
 
@@ -347,34 +280,6 @@ Public Class Student_srch
         End If
 
         LoadPage()
-
-
-
-
-
-
-
-        '' ''btnDisabled()
-        '' ''Try
-        '' ''    If publicThrd.IsBackground Or publicThrd.IsAlive Then
-        '' ''        MsgBox("Wait for current process to finish")
-        '' ''    End If
-        '' ''Catch ex As Exception
-        '' ''End Try
-
-        '' ''EndNum -= 200
-        '' ''If (EndNum < 0) Then
-        '' ''    btnEnabled()
-        '' ''    EndNum = 0
-        '' ''    MsgBox("You Are at the first page", MsgBoxStyle.Exclamation, "Excuse me")
-        '' ''    Exit Sub
-        '' ''End If
-
-        '' ''publicThrd = New Thread(AddressOf OnPrev)
-        '' ''publicThrd.IsBackground = True
-        '' ''publicThrd.Start()
-
-
 
     End Sub
     Private Sub btnLast_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLast.Click
@@ -393,7 +298,7 @@ Public Class Student_srch
 
         LoadPage()
     End Sub
-   
+
     Private Sub btnFrst_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFrst.Click
 
 
@@ -410,7 +315,16 @@ Public Class Student_srch
 
         LoadPage()
 
-
+    End Sub
+    Private Sub cmbCount_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCount.SelectedIndexChanged
+        If cmbCount.SelectedItem.ToString = "All" Then
+            displayPageSize = unVrsltbl.Rows.Count.ToString
+        Else
+            displayPageSize = cmbCount.SelectedItem.ToString
+        End If
+        If FirstTime = False Then
+            FillGrid()
+        End If
 
     End Sub
     Private Sub LoadPage()
@@ -442,8 +356,7 @@ Public Class Student_srch
             newSubFont()
         End If
         lblDisplayTotal.Text = "Displaying Results : - " & dtSource.Rows.Count
-
-        DataGridView1.Columns(12).DisplayIndex = 0
+        'DataGridView1.Columns(12).DisplayIndex = 0
     End Sub
     Private Function CheckFillButton() As Boolean
         'Check if the user clicks the "Fill Grid" button.
@@ -459,7 +372,7 @@ Public Class Student_srch
     End Sub
     Private Sub FillGrid()
         'Set the start and max records. 
-        pageSize = 100 'txtPageSize.Text
+        pageSize = displayPageSize  'txtPageSize.Text
         maxRec = dtSource.Rows.Count
         PageCount = maxRec \ pageSize
         ' Adjust the page number if the last page contains a partial page.
@@ -519,6 +432,7 @@ Public Class Student_srch
         End Try
     End Sub
 #End Region
+
     Sub doQry()
         Dim City As String
         If cmbCity.SelectedIndex = 0 And (txtCity.Text.Length = 0 Or txtCity.Text.Contains("सर्वं")) Then
@@ -565,13 +479,6 @@ Public Class Student_srch
                 fulDatatbl = unVrsltbl.Clone
                 fulDatatbl = rows.CopyToDataTable()
                 If fulDatatbl.Rows.Count > 0 Then
-                    '' ''isSearchEnable = True
-                    '' ''publicThrd = New Thread(AddressOf LoadFromtable)
-                    '' ''btnDisabled()
-                    '' ''EndNum = 0
-                    '' ''totalCount = fulDatatbl.Rows.Count
-                    '' ''publicThrd.IsBackground = True
-                    '' ''publicThrd.Start()
                     dtSource = fulDatatbl
                     FillGrid()
                 End If
@@ -590,16 +497,11 @@ Public Class Student_srch
             Dim clmn_Name As String = "Regn Date"
             Dim rows = unVrsltbl.Select("'" & clmn_Name & "' LIKE '#" + dTimepik.Value.Date.ToShortDateString + "#'")
             Try
-                fulDatatbl = New DataTable
-                fulDatatbl = unVrsltbl.Clone
                 fulDatatbl = rows.CopyToDataTable()
                 isSearchEnable = True
-                publicThrd = New Thread(AddressOf LoadFromtable)
                 btnDisabled()
                 EndNum = 0
                 totalCount = fulDatatbl.Rows.Count
-                publicThrd.IsBackground = True
-                publicThrd.Start()
             Catch ex As Exception
                 MsgBox("No Results Found")
             End Try
@@ -815,5 +717,7 @@ Public Class Student_srch
             End If
         End If
     End Sub
-
+    Private Sub ViewFieldsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ViewFieldsToolStripMenuItem.Click
+        checkButtons.ShowDialog()
+    End Sub
 End Class

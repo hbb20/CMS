@@ -29,8 +29,22 @@ Public Class Input_Form
         FillActVt()
         FillEducation()
         FillQualific()
+        FillMedium()
     End Sub
     Sub LoadComboBox()
+        ComBoBoxLoadModule()
+        Try
+            cmbAct.Items.Clear()
+            cmbCity.Items.Clear()
+            cmbCntry.Items.Clear()
+            cmbDistr.Items.Clear()
+            cmbEdu.Items.Clear()
+            cmbState.Items.Clear()
+            cmbDistr.Items.Clear()
+            cmbQuol.Items.Clear()
+            cmbMedium.Items.Clear()
+        Catch ex As Exception
+        End Try
         LoadCmbCity()
         LoadCmbState()
         LoadCmbCountry()
@@ -38,6 +52,7 @@ Public Class Input_Form
         LoadCmbActVt()
         LoadCmbEduc()
         LoadCmbQuol()
+        LoadMedium()
     End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         dTimepik.Format = DateTimePickerFormat.Custom
@@ -46,7 +61,6 @@ Public Class Input_Form
         dtPkrBdate.CustomFormat = "dd-MM-yyyy"
         dtPkrbks.Format = DateTimePickerFormat.Custom
         dtPkrbks.CustomFormat = "dd-MM-yyyy"
-
 
         Control.CheckForIllegalCrossThreadCalls = False
 
@@ -71,7 +85,8 @@ Public Class Input_Form
 
         focusBirthday()
         If UpcomingBithdays > 0 Then
-            MsgBox("There's " + UpcomingBithdays.ToString + " Upcoming birthdays in this week" + vbCrLf + "View in Birthdays Section")
+            TabPage5.Text = "Birthdays (" + UpcomingBithdays.ToString + ")"
+            'MsgBox("There's " + UpcomingBithdays.ToString + " Upcoming birthdays in this week" + vbCrLf + "View in Birthdays Section")
         End If
     End Sub
     'Load Upcoming Registration ID
@@ -177,6 +192,17 @@ Public Class Input_Form
             MsgBox("Missing Qualification List", MsgBoxStyle.Critical, "Oops . . .")
         End Try
     End Sub
+    Private Sub LoadMedium()
+        For Each wr As String In lstMedium
+            cmbMedium.Items.Add(wr)
+        Next
+        Try
+            cmbMedium.SelectedIndex = 0
+        Catch ex As Exception
+            MsgBox("Missing Qualification List", MsgBoxStyle.Critical, "Oops . . .")
+        End Try
+    End Sub
+
 #End Region
 
     Private Sub btnInsert_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
@@ -238,7 +264,7 @@ Public Class Input_Form
         'Contact ID
         qrY += "'" & txtContcId.Text & "',"
         'Medium
-        qrY += "'" & txtMidium.Text & "'"
+        qrY += "'" & cmbMedium.SelectedItem.ToString.Replace("'", "''") & "'"
         'Finished
         qrY += " )"
         Try
@@ -337,7 +363,7 @@ Public Class Input_Form
                                  "`regn_Date`='" & dTimepik.Value.Date.ToShortDateString & "'," & _
                                  "`Activt`='" & activt & "'," & _
                                  "`conTctID`='" & txtContcId.Text & "'," & _
-                                 "`Medium_of`='" & Corrector(txtMidium.Text) & "'" & _
+                                 "`Medium_of`='" & Corrector(cmbMedium.SelectedItem.ToString) & "'" & _
                                  " WHERE `Regn_ID` LIKE '" & txtRegnId.Text & "'"
         Dim cnUpd As New OleDbConnection(connString)
         Dim dA21 As New OleDbDataAdapter(uPdQuery, cnUpd)
@@ -408,7 +434,7 @@ Public Class Input_Form
             txtFullName.Text = ""
             txtPincode.Text = ""
             txtTelNo.Text = ""
-            txtMidium.Text = ""
+            cmbMedium.SelectedIndex = 0
             txtContcId.Text = ""
             cmbQuol.SelectedIndex = 0
             cmbEdu.SelectedIndex = 0
@@ -441,6 +467,7 @@ Public Class Input_Form
                 btnSave.Text = "&Insert Records (alt+I)"
                 Me.Refresh()
                 cntFs += 1
+                txtStdntID.Text = ""
             End If
         End If
     End Sub
@@ -450,6 +477,7 @@ Public Class Input_Form
             txtRegnId.Text = ""
             ClearTxtBoxes()
             btnSave.Text = "&Modify Records (alt+M)"
+            txtStdntID.Text = ""
             Me.Refresh()
         End If
     End Sub
@@ -628,7 +656,11 @@ Public Class Input_Form
         Catch ex As Exception
         End Try
         Try
-            txtMidium.Text = dTable.Rows(0).Item("Medium_of").ToString
+            For k As Integer = 0 To cmbDistr.Items.Count - 1
+                If cmbMedium.Items(k).ToString = dTable.Rows(0).Item("Medium_of").ToString Then
+                    cmbMedium.SelectedIndex = k
+                End If
+            Next
         Catch ex As Exception
         End Try
         Try
@@ -720,14 +752,14 @@ Public Class Input_Form
             End If
         Next
     End Sub
-    Private Sub EditComboboxListToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditComboboxListToolStripMenuItem.Click
-        EditCity.ShowDialog()
+    Private Sub EditComboboxListToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
     Private Sub UpcomingExamsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UpcomingExamsToolStripMenuItem.Click
         UpkmngExm.Show()
     End Sub
-    Private Sub RefreshComboboxToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RefreshComboboxToolStripMenuItem.Click
-        LoadComboBox()
+    Private Sub RefreshComboboxToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 
     Private Sub GenerateToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -923,14 +955,31 @@ falsei:
     End Sub
 
     Private Sub Input_Form_FormClosed(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
-        Me.Dispose()
-        Me.Close()
-
+        For Each mp As Process In System.Diagnostics.Process.GetProcessesByName("CMS")
+            mp.Kill()
+        Next
     End Sub
 
     Private Sub Input_Form_FormClosing(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
-        Me.Dispose()
-        Me.Close()
+        For Each mp As Process In System.Diagnostics.Process.GetProcessesByName("CMS")
+            mp.Kill()
+        Next
+    End Sub
 
+    Private Sub RefreshComboboxToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        LoadComboBox()
+    End Sub
+
+    Private Sub EditComboboxListToolStripMenuItemToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditComboboxListToolStripMenuItemToolStripMenuItem.Click
+        EditCity.ShowDialog()
+    End Sub
+
+    Private Sub btnAdMedium_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdMedium.Click
+        EditCity.Show()
+        EditCity.MediumToolStripMenuItem.PerformClick()
+    End Sub
+
+    Private Sub FeeReportToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FeeReportToolStripMenuItem.Click
+        FeeReport.Show()
     End Sub
 End Class

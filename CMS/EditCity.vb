@@ -9,6 +9,7 @@ Public Class EditCity
     Dim Actvt As String = Application.StartupPath + "\Activity.txt"
     Dim FIleEduc As String = Application.StartupPath + "\Educat.txt"
     Dim FIleQuol As String = Application.StartupPath + "\Quolif.txt"
+    Dim FIleMedium As String = Application.StartupPath + "\Medium.txt"
 
     Dim loadedFile As String
     Sub loadFIle(ByVal FileNm As String)
@@ -70,6 +71,8 @@ Public Class EditCity
         'Close the file.
         objStreamWriter.Close()
         MsgBox("Data Updated Successfully", MsgBoxStyle.Information, "Done")
+
+        Input_Form.LoadComboBox()
     End Sub
     Private Sub ActvyItms_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ActvyItms.Click
         loadFIle(Actvt)
@@ -101,5 +104,10 @@ Public Class EditCity
     End Sub
     Sub changFFF(ByVal Font1 As Font)
         RichTextBox1.Font = Font1
+    End Sub
+
+    Private Sub MediumToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MediumToolStripMenuItem.Click
+        loadFIle(FileMedium)
+        Me.Text = "Edit List (Medium)"
     End Sub
 End Class

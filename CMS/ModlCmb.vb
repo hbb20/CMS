@@ -9,6 +9,7 @@ Module mdleCMbBx
     Dim FIleActvt As String = Application.StartupPath + "\Activity.txt"
     Dim FIleEduc As String = Application.StartupPath + "\Educat.txt"
     Dim FIleQuol As String = Application.StartupPath + "\Quolif.txt"
+    Dim FIleMedium As String = Application.StartupPath + "\Medium.txt"
 
     Public lstCmb As New List(Of String)
     Public lstDis As New List(Of String)
@@ -17,7 +18,10 @@ Module mdleCMbBx
     Public lstActVt As New List(Of String)
     Public lstEduca As New List(Of String)
     Public lstQuolf As New List(Of String)
+    Public lstMedium As New List(Of String)
+
     Sub FillCity()
+        lstCmb = New List(Of String)
         Dim objStreamReader As StreamReader
         Dim strLine As String
         'Pass the file path and the file name to the StreamReader constructor.
@@ -33,7 +37,26 @@ Module mdleCMbBx
         'Close the file.
         objStreamReader.Close()
     End Sub
+    Sub FillMedium()
+        lstMedium = New List(Of String)
+        Dim objStreamReader As StreamReader
+        Dim strLine As String
+        'Pass the file path and the file name to the StreamReader constructor.
+        objStreamReader = New StreamReader(FIleMedium)
+        'Read the first line of text.
+        strLine = objStreamReader.ReadLine
+        'Continue to read until you reach the end of the file.
+        Do While Not strLine Is Nothing
+            'Write the line to the Console window.
+            lstMedium.Add(strLine + vbCrLf)
+            strLine = objStreamReader.ReadLine
+        Loop
+        'Close the file.
+        objStreamReader.Close()
+    End Sub
+
     Sub FillActVt()
+        lstActVt = New List(Of String)
         Dim objStreamReader As StreamReader
         Dim strLine As String
         'Pass the file path and the file name to the StreamReader constructor.
@@ -50,6 +73,7 @@ Module mdleCMbBx
         objStreamReader.Close()
     End Sub
     Sub FillEducation()
+        lstEduca = New List(Of String)
         Dim objStreamReader As StreamReader
         Dim strLine As String
         'Pass the file path and the file name to the StreamReader constructor.
@@ -66,6 +90,7 @@ Module mdleCMbBx
         objStreamReader.Close()
     End Sub
     Sub FillQualific()
+        lstQuolf = New List(Of String)
         Dim objStreamReader As StreamReader
         Dim strLine As String
         'Pass the file path and the file name to the StreamReader constructor.
@@ -82,6 +107,7 @@ Module mdleCMbBx
         objStreamReader.Close()
     End Sub
     Sub FillState()
+        lstStat = New List(Of String)
         Dim objStreamReader As StreamReader
         Dim strLine As String
         'Pass the file path and the file name to the StreamReader constructor.
@@ -110,6 +136,7 @@ Module mdleCMbBx
     '    End Try
     'End Sub
     Sub FillCountry()
+        lstCntr = New List(Of String)
         Dim objStreamReader As StreamReader
         Dim strLine As String
         'Pass the file path and the file name to the StreamReader constructor.
@@ -126,6 +153,7 @@ Module mdleCMbBx
         objStreamReader.Close()
     End Sub
     Sub FillDistr()
+        lstDis = New List(Of String)
         Dim objStreamReader As StreamReader
         Dim strLine As String
         'Pass the file path and the file name to the StreamReader constructor.

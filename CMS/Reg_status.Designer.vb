@@ -44,6 +44,7 @@ Partial Class Reg_status
         Me.dgrvEdu = New System.Windows.Forms.DataGridView()
         Me.dgrvQuol = New System.Windows.Forms.DataGridView()
         Me.btnGenrtRpt = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1.SuspendLayout()
         Me.panOverly.SuspendLayout()
         Me.panContain.SuspendLayout()
@@ -52,6 +53,7 @@ Partial Class Reg_status
         CType(Me.dgrvState, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgrvEdu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgrvQuol, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -192,8 +194,8 @@ Partial Class Reg_status
         '
         'panOverly
         '
+        Me.panOverly.Controls.Add(Me.Panel1)
         Me.panOverly.Controls.Add(Me.panContain)
-        Me.panOverly.Controls.Add(Me.btnGenrtRpt)
         Me.panOverly.Controls.Add(Me.lblTotal)
         Me.panOverly.Controls.Add(Me.btnGo)
         Me.panOverly.Controls.Add(Me.Label2)
@@ -206,7 +208,7 @@ Partial Class Reg_status
         Me.panOverly.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panOverly.Location = New System.Drawing.Point(0, 0)
         Me.panOverly.Name = "panOverly"
-        Me.panOverly.Size = New System.Drawing.Size(924, 614)
+        Me.panOverly.Size = New System.Drawing.Size(1224, 692)
         Me.panOverly.TabIndex = 30
         '
         'panContain
@@ -217,9 +219,9 @@ Partial Class Reg_status
         Me.panContain.Controls.Add(Me.dgrvState)
         Me.panContain.Controls.Add(Me.dgrvEdu)
         Me.panContain.Controls.Add(Me.dgrvQuol)
-        Me.panContain.Location = New System.Drawing.Point(12, 145)
+        Me.panContain.Location = New System.Drawing.Point(3, 145)
         Me.panContain.Name = "panContain"
-        Me.panContain.Size = New System.Drawing.Size(900, 388)
+        Me.panContain.Size = New System.Drawing.Size(1166, 465)
         Me.panContain.TabIndex = 30
         '
         'dgrvContct
@@ -311,22 +313,30 @@ Partial Class Reg_status
         '
         Me.btnGenrtRpt.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnGenrtRpt.Font = New System.Drawing.Font("Lucida Console", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGenrtRpt.Location = New System.Drawing.Point(745, 539)
+        Me.btnGenrtRpt.Location = New System.Drawing.Point(783, 30)
         Me.btnGenrtRpt.Name = "btnGenrtRpt"
         Me.btnGenrtRpt.Size = New System.Drawing.Size(167, 34)
         Me.btnGenrtRpt.TabIndex = 2
         Me.btnGenrtRpt.Text = "Generate Report"
         Me.btnGenrtRpt.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.btnGenrtRpt)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 616)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1224, 76)
+        Me.Panel1.TabIndex = 31
+        '
         'Reg_status
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(924, 614)
+        Me.ClientSize = New System.Drawing.Size(1224, 692)
         Me.Controls.Add(Me.panOverly)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
         Me.Name = "Reg_status"
         Me.Text = "Registration Status"
         Me.GroupBox1.ResumeLayout(False)
@@ -339,6 +349,7 @@ Partial Class Reg_status
         CType(Me.dgrvState, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgrvEdu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgrvQuol, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -363,4 +374,5 @@ Partial Class Reg_status
     Friend WithEvents dgrvState As System.Windows.Forms.DataGridView
     Friend WithEvents dgrvDistr As System.Windows.Forms.DataGridView
     Friend WithEvents dgrvContct As System.Windows.Forms.DataGridView
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 End Class

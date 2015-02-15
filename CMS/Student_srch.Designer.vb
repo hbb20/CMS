@@ -70,9 +70,12 @@ Partial Class Student_srch
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.lblFont = New System.Windows.Forms.Label()
+        Me.cmbCount = New System.Windows.Forms.ComboBox()
         Me.btnGo = New CMS.UbuntuButtonGray()
         Me.btnSlctAl = New CMS.UbuntuButtonGray()
         Me.btnSearch = New CMS.UbuntuButtonGray()
+        Me.DisplayFieldsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewFieldsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -183,7 +186,7 @@ Partial Class Student_srch
         'chkAplyFont
         '
         Me.chkAplyFont.AutoSize = True
-        Me.chkAplyFont.Location = New System.Drawing.Point(983, 26)
+        Me.chkAplyFont.Location = New System.Drawing.Point(926, 32)
         Me.chkAplyFont.Name = "chkAplyFont"
         Me.chkAplyFont.Size = New System.Drawing.Size(106, 17)
         Me.chkAplyFont.TabIndex = 75
@@ -233,20 +236,21 @@ Partial Class Student_srch
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.cmbCount)
         Me.Panel2.Controls.Add(Me.btnFrst)
         Me.Panel2.Controls.Add(Me.btnLast)
         Me.Panel2.Controls.Add(Me.lblNUms)
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.btnNxt)
         Me.Panel2.Controls.Add(Me.btnPrev)
-        Me.Panel2.Location = New System.Drawing.Point(1090, 53)
+        Me.Panel2.Location = New System.Drawing.Point(1090, 13)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(132, 80)
+        Me.Panel2.Size = New System.Drawing.Size(132, 120)
         Me.Panel2.TabIndex = 72
         '
         'btnFrst
         '
-        Me.btnFrst.Location = New System.Drawing.Point(3, 54)
+        Me.btnFrst.Location = New System.Drawing.Point(4, 92)
         Me.btnFrst.Name = "btnFrst"
         Me.btnFrst.Size = New System.Drawing.Size(31, 23)
         Me.btnFrst.TabIndex = 75
@@ -255,7 +259,7 @@ Partial Class Student_srch
         '
         'btnLast
         '
-        Me.btnLast.Location = New System.Drawing.Point(95, 54)
+        Me.btnLast.Location = New System.Drawing.Point(96, 92)
         Me.btnLast.Name = "btnLast"
         Me.btnLast.Size = New System.Drawing.Size(31, 23)
         Me.btnLast.TabIndex = 74
@@ -264,7 +268,7 @@ Partial Class Student_srch
         '
         'lblNUms
         '
-        Me.lblNUms.Location = New System.Drawing.Point(6, 22)
+        Me.lblNUms.Location = New System.Drawing.Point(7, 60)
         Me.lblNUms.Name = "lblNUms"
         Me.lblNUms.Size = New System.Drawing.Size(112, 29)
         Me.lblNUms.TabIndex = 73
@@ -274,7 +278,7 @@ Partial Class Student_srch
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(29, 6)
+        Me.Label11.Location = New System.Drawing.Point(30, 44)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(63, 13)
         Me.Label11.TabIndex = 72
@@ -282,7 +286,7 @@ Partial Class Student_srch
         '
         'btnNxt
         '
-        Me.btnNxt.Location = New System.Drawing.Point(69, 54)
+        Me.btnNxt.Location = New System.Drawing.Point(70, 92)
         Me.btnNxt.Name = "btnNxt"
         Me.btnNxt.Size = New System.Drawing.Size(23, 23)
         Me.btnNxt.TabIndex = 70
@@ -291,7 +295,7 @@ Partial Class Student_srch
         '
         'btnPrev
         '
-        Me.btnPrev.Location = New System.Drawing.Point(40, 54)
+        Me.btnPrev.Location = New System.Drawing.Point(41, 92)
         Me.btnPrev.Name = "btnPrev"
         Me.btnPrev.Size = New System.Drawing.Size(23, 23)
         Me.btnPrev.TabIndex = 71
@@ -441,7 +445,7 @@ Partial Class Student_srch
         'MenuStrip1
         '
         Me.MenuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ReportsToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.DisplayFieldsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
@@ -516,6 +520,18 @@ Partial Class Student_srch
         Me.lblFont.TabIndex = 27
         Me.lblFont.Text = "-"
         '
+        'cmbCount
+        '
+        Me.cmbCount.Cursor = System.Windows.Forms.Cursors.AppStarting
+        Me.cmbCount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCount.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCount.FormattingEnabled = True
+        Me.cmbCount.Items.AddRange(New Object() {"100", "200", "300", "500", "1000", "All"})
+        Me.cmbCount.Location = New System.Drawing.Point(18, 12)
+        Me.cmbCount.Name = "cmbCount"
+        Me.cmbCount.Size = New System.Drawing.Size(94, 27)
+        Me.cmbCount.TabIndex = 76
+        '
         'btnGo
         '
         Me.btnGo.BackColor = System.Drawing.Color.Transparent
@@ -545,6 +561,19 @@ Partial Class Student_srch
         Me.btnSearch.Size = New System.Drawing.Size(106, 33)
         Me.btnSearch.TabIndex = 65
         Me.btnSearch.Text = "Search"
+        '
+        'DisplayFieldsToolStripMenuItem
+        '
+        Me.DisplayFieldsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewFieldsToolStripMenuItem})
+        Me.DisplayFieldsToolStripMenuItem.Name = "DisplayFieldsToolStripMenuItem"
+        Me.DisplayFieldsToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
+        Me.DisplayFieldsToolStripMenuItem.Text = "&Display Fields"
+        '
+        'ViewFieldsToolStripMenuItem
+        '
+        Me.ViewFieldsToolStripMenuItem.Name = "ViewFieldsToolStripMenuItem"
+        Me.ViewFieldsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ViewFieldsToolStripMenuItem.Text = "&View Fields"
         '
         'Student_srch
         '
@@ -621,4 +650,7 @@ Partial Class Student_srch
     Friend WithEvents btnLast As System.Windows.Forms.Button
     Friend WithEvents chkAplyFont As System.Windows.Forms.CheckBox
     Friend WithEvents lblFont As System.Windows.Forms.Label
+    Friend WithEvents cmbCount As System.Windows.Forms.ComboBox
+    Friend WithEvents DisplayFieldsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ViewFieldsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -34,14 +34,14 @@ Partial Class Input_Form
         Me.UpcomingExamsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContactListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExamlistToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditComboboxListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RefreshComboboxToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FolloUpReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FeeReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditComboboxListToolStripMenuItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangeFontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrationStatusToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FontDialog1 = New System.Windows.Forms.FontDialog()
         Me.TbCntrl1 = New CMS.DotNetBarTabcontrol()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -80,8 +80,10 @@ Partial Class Input_Form
         Me.dTimepik = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.grp1 = New System.Windows.Forms.GroupBox()
+        Me.btnAdMedium = New System.Windows.Forms.Button()
         Me.txtMidium = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
+        Me.cmbMedium = New System.Windows.Forms.ComboBox()
         Me.txtCityName = New System.Windows.Forms.TextBox()
         Me.btnAdDistr = New System.Windows.Forms.Button()
         Me.btnAdCity = New System.Windows.Forms.Button()
@@ -128,7 +130,7 @@ Partial Class Input_Form
         'MenuStrip1
         '
         Me.MenuStrip1.Font = New System.Drawing.Font("Lucida Console", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ViewToolStripMenuItem, Me.FontToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ViewToolStripMenuItem, Me.EditToolStripMenuItem, Me.FontToolStripMenuItem, Me.ReportsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1314, 24)
@@ -150,7 +152,7 @@ Partial Class Input_Form
         '
         'ViewToolStripMenuItem
         '
-        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentLisToolStripMenuItem, Me.UpcomingExamsToolStripMenuItem, Me.ContactListToolStripMenuItem, Me.ExamlistToolStripMenuItem, Me.EditComboboxListToolStripMenuItem, Me.RefreshComboboxToolStripMenuItem, Me.FolloUpReportToolStripMenuItem})
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentLisToolStripMenuItem, Me.UpcomingExamsToolStripMenuItem, Me.ContactListToolStripMenuItem, Me.ExamlistToolStripMenuItem, Me.FolloUpReportToolStripMenuItem, Me.FeeReportToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
         Me.ViewToolStripMenuItem.Text = "&View"
@@ -158,46 +160,53 @@ Partial Class Input_Form
         'StudentLisToolStripMenuItem
         '
         Me.StudentLisToolStripMenuItem.Name = "StudentLisToolStripMenuItem"
-        Me.StudentLisToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.StudentLisToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.StudentLisToolStripMenuItem.Text = "&Student List"
         '
         'UpcomingExamsToolStripMenuItem
         '
         Me.UpcomingExamsToolStripMenuItem.Font = New System.Drawing.Font("Lucida Console", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UpcomingExamsToolStripMenuItem.Name = "UpcomingExamsToolStripMenuItem"
-        Me.UpcomingExamsToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.UpcomingExamsToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.UpcomingExamsToolStripMenuItem.Text = "&Upcoming_Exams"
         '
         'ContactListToolStripMenuItem
         '
         Me.ContactListToolStripMenuItem.Font = New System.Drawing.Font("Lucida Console", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ContactListToolStripMenuItem.Name = "ContactListToolStripMenuItem"
-        Me.ContactListToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.ContactListToolStripMenuItem.Text = "&Contact_List"
+        Me.ContactListToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.ContactListToolStripMenuItem.Text = "&Connection List"
         '
         'ExamlistToolStripMenuItem
         '
         Me.ExamlistToolStripMenuItem.Name = "ExamlistToolStripMenuItem"
-        Me.ExamlistToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ExamlistToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.ExamlistToolStripMenuItem.Text = "Exam_list"
-        '
-        'EditComboboxListToolStripMenuItem
-        '
-        Me.EditComboboxListToolStripMenuItem.Name = "EditComboboxListToolStripMenuItem"
-        Me.EditComboboxListToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.EditComboboxListToolStripMenuItem.Text = "&Edit Combobox List"
-        '
-        'RefreshComboboxToolStripMenuItem
-        '
-        Me.RefreshComboboxToolStripMenuItem.Name = "RefreshComboboxToolStripMenuItem"
-        Me.RefreshComboboxToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.RefreshComboboxToolStripMenuItem.Text = "&Refresh Combobox"
         '
         'FolloUpReportToolStripMenuItem
         '
         Me.FolloUpReportToolStripMenuItem.Name = "FolloUpReportToolStripMenuItem"
-        Me.FolloUpReportToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.FolloUpReportToolStripMenuItem.Text = "&FolloUp Report"
+        Me.FolloUpReportToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.FolloUpReportToolStripMenuItem.Text = "&FolloUp"
+        '
+        'FeeReportToolStripMenuItem
+        '
+        Me.FeeReportToolStripMenuItem.Name = "FeeReportToolStripMenuItem"
+        Me.FeeReportToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.FeeReportToolStripMenuItem.Text = "&Fee report"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditComboboxListToolStripMenuItemToolStripMenuItem})
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
+        Me.EditToolStripMenuItem.Text = "&Edit"
+        '
+        'EditComboboxListToolStripMenuItemToolStripMenuItem
+        '
+        Me.EditComboboxListToolStripMenuItemToolStripMenuItem.Name = "EditComboboxListToolStripMenuItemToolStripMenuItem"
+        Me.EditComboboxListToolStripMenuItemToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.EditComboboxListToolStripMenuItemToolStripMenuItem.Text = "&Edit Combobox List"
         '
         'FontToolStripMenuItem
         '
@@ -225,12 +234,6 @@ Partial Class Input_Form
         Me.RegistrationStatusToolStripMenuItem1.Name = "RegistrationStatusToolStripMenuItem1"
         Me.RegistrationStatusToolStripMenuItem1.Size = New System.Drawing.Size(203, 22)
         Me.RegistrationStatusToolStripMenuItem1.Text = "&Registration Status"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
-        Me.HelpToolStripMenuItem.Text = "&Help"
         '
         'FontDialog1
         '
@@ -634,8 +637,10 @@ Partial Class Input_Form
         '
         'grp1
         '
+        Me.grp1.Controls.Add(Me.btnAdMedium)
         Me.grp1.Controls.Add(Me.txtMidium)
         Me.grp1.Controls.Add(Me.Label23)
+        Me.grp1.Controls.Add(Me.cmbMedium)
         Me.grp1.Controls.Add(Me.txtCityName)
         Me.grp1.Controls.Add(Me.btnAdDistr)
         Me.grp1.Controls.Add(Me.btnAdCity)
@@ -667,10 +672,19 @@ Partial Class Input_Form
         Me.grp1.TabStop = False
         Me.grp1.Text = "Connection Details"
         '
+        'btnAdMedium
+        '
+        Me.btnAdMedium.Location = New System.Drawing.Point(337, 494)
+        Me.btnAdMedium.Name = "btnAdMedium"
+        Me.btnAdMedium.Size = New System.Drawing.Size(57, 30)
+        Me.btnAdMedium.TabIndex = 53
+        Me.btnAdMedium.Text = "Add"
+        Me.btnAdMedium.UseVisualStyleBackColor = True
+        '
         'txtMidium
         '
         Me.txtMidium.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMidium.Location = New System.Drawing.Point(178, 494)
+        Me.txtMidium.Location = New System.Drawing.Point(361, 417)
         Me.txtMidium.Name = "txtMidium"
         Me.txtMidium.Size = New System.Drawing.Size(190, 30)
         Me.txtMidium.TabIndex = 51
@@ -684,6 +698,18 @@ Partial Class Input_Form
         Me.Label23.Size = New System.Drawing.Size(68, 19)
         Me.Label23.TabIndex = 50
         Me.Label23.Text = "Medium:"
+        '
+        'cmbMedium
+        '
+        Me.cmbMedium.DropDownHeight = 300
+        Me.cmbMedium.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMedium.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbMedium.FormattingEnabled = True
+        Me.cmbMedium.IntegralHeight = False
+        Me.cmbMedium.Location = New System.Drawing.Point(170, 494)
+        Me.cmbMedium.Name = "cmbMedium"
+        Me.cmbMedium.Size = New System.Drawing.Size(161, 30)
+        Me.cmbMedium.TabIndex = 52
         '
         'txtCityName
         '
@@ -1017,7 +1043,7 @@ Partial Class Input_Form
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage6.Size = New System.Drawing.Size(1170, 650)
         Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "Follow Up Report"
+        Me.TabPage6.Text = "Follow Up"
         '
         'TabPage7
         '
@@ -1072,7 +1098,6 @@ Partial Class Input_Form
     Friend WithEvents ExamlistToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FontToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChangeFontToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TbCntrl1 As CMS.DotNetBarTabcontrol
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents UbuntuGroupBox1 As CMS.UbuntuGroupBox
@@ -1111,7 +1136,6 @@ Partial Class Input_Form
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents cmbState As System.Windows.Forms.ComboBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents EditComboboxListToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents cmbDistr As System.Windows.Forms.ComboBox
     Friend WithEvents grp3 As System.Windows.Forms.GroupBox
@@ -1124,7 +1148,6 @@ Partial Class Input_Form
     Friend WithEvents lblActvt As System.Windows.Forms.Label
     Friend WithEvents cmbEdu As System.Windows.Forms.ComboBox
     Friend WithEvents cmbQuol As System.Windows.Forms.ComboBox
-    Friend WithEvents RefreshComboboxToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FolloUpReportToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btnAdContr As System.Windows.Forms.Button
     Friend WithEvents btnAdDistr As System.Windows.Forms.Button
@@ -1150,5 +1173,10 @@ Partial Class Input_Form
     Friend WithEvents dgrvBday As System.Windows.Forms.DataGridView
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents txtMidium As System.Windows.Forms.TextBox
+    Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EditComboboxListToolStripMenuItemToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents btnAdMedium As System.Windows.Forms.Button
+    Friend WithEvents cmbMedium As System.Windows.Forms.ComboBox
+    Friend WithEvents FeeReportToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
