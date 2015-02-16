@@ -22,6 +22,7 @@ Partial Class FeeReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FeeReport))
         Me.dgrvFee = New System.Windows.Forms.DataGridView()
         CType(Me.dgrvFee, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -32,6 +33,7 @@ Partial Class FeeReport
         Me.dgrvFee.AllowUserToAddRows = False
         Me.dgrvFee.AllowUserToDeleteRows = False
         Me.dgrvFee.AllowUserToResizeRows = False
+        Me.dgrvFee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgrvFee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgrvFee.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.dgrvFee.Location = New System.Drawing.Point(0, 162)
@@ -39,6 +41,8 @@ Partial Class FeeReport
         Me.dgrvFee.Name = "dgrvFee"
         Me.dgrvFee.ReadOnly = True
         Me.dgrvFee.RowHeadersVisible = False
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgrvFee.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgrvFee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgrvFee.Size = New System.Drawing.Size(1344, 520)
         Me.dgrvFee.TabIndex = 0

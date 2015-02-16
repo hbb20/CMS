@@ -10,11 +10,18 @@ Public Class Fee_Details
     Dim unVrsltbl As New DataTable
     Public recptTabl As New DataTable
 
-
     Public thrdWait As Thread
 
+    Public fromWhere As String = "Modify"
+
     Private Sub Fee_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblregId.Text = regId
+        If fromWhere = "Modify" Then
+            lblregId.Text = regId
+        Else
+
+        End If
+
+
         cmbExmPrt.SelectedIndex = 0
         txtRcptNo.Text = ""
         UpcmngRcpt()
@@ -123,6 +130,10 @@ Public Class Fee_Details
     Function ChekExist() As Boolean
         Dim dtAabEx As DataTable = QryRunr("SELECT * FROM `fee_table` WHERE `Recpt_No` = '" + txtRcptNo.Text + "'")
         If dtAabEx.Rows.Count <> 0 Then
+            'If dtAabEx.Rows(0).Item(0).ToString = "-1" Then
+            '    Return False
+            '    Exit Function
+            'End If
             Return True
         Else
             Return False

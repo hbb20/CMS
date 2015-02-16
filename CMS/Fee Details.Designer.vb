@@ -42,6 +42,7 @@ Partial Class Fee_Details
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtRcptNo = New System.Windows.Forms.TextBox()
         Me.btnGenerate = New System.Windows.Forms.Button()
+        Me.txtRgnId = New System.Windows.Forms.TextBox()
         Me.grp3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,6 +69,7 @@ Partial Class Fee_Details
         '
         'grp3
         '
+        Me.grp3.Controls.Add(Me.txtRgnId)
         Me.grp3.Controls.Add(Me.txtBnkNm)
         Me.grp3.Controls.Add(Me.lblBnkNm)
         Me.grp3.Controls.Add(Me.btnGo)
@@ -243,6 +245,13 @@ Partial Class Fee_Details
         Me.btnGenerate.Text = "Generate Report"
         Me.btnGenerate.UseVisualStyleBackColor = True
         '
+        'txtRgnId
+        '
+        Me.txtRgnId.Location = New System.Drawing.Point(220, 22)
+        Me.txtRgnId.Name = "txtRgnId"
+        Me.txtRgnId.Size = New System.Drawing.Size(133, 24)
+        Me.txtRgnId.TabIndex = 50
+        '
         'Fee_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -284,4 +293,5 @@ Partial Class Fee_Details
     Friend WithEvents btnGenerate As System.Windows.Forms.Button
     Friend WithEvents txtBnkNm As System.Windows.Forms.TextBox
     Friend WithEvents lblBnkNm As System.Windows.Forms.Label
+    Friend WithEvents txtRgnId As System.Windows.Forms.TextBox
 End Class

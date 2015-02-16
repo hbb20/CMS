@@ -79,6 +79,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:CMS.DataSet1.feeTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:CMS.DataSet1.reg_tableRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -103,6 +107,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:CMS.DataSet1.feeTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:CMS.DataSet1.reg_tableRowChangeEvent">
 	<summary>
 Row event argument class
@@ -124,6 +132,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:CMS.DataSet1.tabl5RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CMS.DataSet1.feeTableRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>

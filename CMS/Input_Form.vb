@@ -721,6 +721,8 @@ Public Class Input_Form
     End Sub
 
     Private Sub btnFeeNew_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFeeNew.Click
+        Fee_Details.fromWhere = "fromWhere"
+
         Fee_Details.ShowDialog()
     End Sub
     Private Sub ChangeFontToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChangeFontToolStripMenuItem.Click
